@@ -1,1 +1,3 @@
-# DAILY-CODE
+## DAILY-CODE
+写代码，身心愉悦  
+一天一码，延年益寿
