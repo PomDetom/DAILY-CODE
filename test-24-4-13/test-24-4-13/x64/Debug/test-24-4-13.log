@@ -1,0 +1,8 @@
+﻿  strtok.c
+D:\My_Repository\DAILY-CODE\test-24-4-13\test-24-4-13\strtok.c(14,15): warning C4090: “=”: 不同的“const”限定符
+D:\My_Repository\DAILY-CODE\test-24-4-13\test-24-4-13\strtok.c(23,16): warning C4090: “return”: 不同的“const”限定符
+D:\My_Repository\DAILY-CODE\test-24-4-13\test-24-4-13\strtok.c(28,14): warning C4090: “return”: 不同的“const”限定符
+D:\My_Repository\DAILY-CODE\test-24-4-13\test-24-4-13\strtok.c(40,15): warning C4090: “=”: 不同的“const”限定符
+D:\My_Repository\DAILY-CODE\test-24-4-13\test-24-4-13\strtok.c(49,16): warning C4090: “return”: 不同的“const”限定符
+D:\My_Repository\DAILY-CODE\test-24-4-13\test-24-4-13\strtok.c(54,14): warning C4090: “return”: 不同的“const”限定符
+  test-24-4-13.vcxproj -> D:\My_Repository\DAILY-CODE\test-24-4-13\x64\Debug\test-24-4-13.exe
