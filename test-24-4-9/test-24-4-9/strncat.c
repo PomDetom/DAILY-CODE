@@ -7,7 +7,7 @@ char* my_strncat(char* str1, const char* str2, size_t n)
 	char* ret = str1;
 	int m = 0;
 
-	assert(*str1 && *str2);
+	assert(str1 && str2);
 	while (*str1)
 	{
 		str1++;

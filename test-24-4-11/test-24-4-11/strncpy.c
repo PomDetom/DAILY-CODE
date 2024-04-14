@@ -6,7 +6,7 @@ char* my_strncpy(char* str1, const char* str2, size_t n)
 	char* ret = str1;
 	int m = 0;
 
-	assert(*str1 && *str2);
+	assert(str1 && str2);
 	for (m = 0; m < n; m++)
 	{
 		*str1 = *str2;

@@ -8,7 +8,7 @@ char* my_strstr(const char* arr1, const char* arr2)
 	char* str0 = arr1;
 	char* str2 = arr2;
 
-	assert(*str1 && *str2);
+	assert(str1 && str2);
 	while (*str0)
 	{
 		str1 = str0;

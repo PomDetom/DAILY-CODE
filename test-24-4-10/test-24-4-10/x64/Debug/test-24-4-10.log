@@ -3,4 +3,5 @@ D:\My_Repository\DAILY-CODE\test-24-4-10\test-24-4-10\strstr.c(15,14): warning C
 D:\My_Repository\DAILY-CODE\test-24-4-10\test-24-4-10\strstr.c(7,8): warning C4090: “初始化”: 不同的“const”限定符
 D:\My_Repository\DAILY-CODE\test-24-4-10\test-24-4-10\strstr.c(8,8): warning C4090: “初始化”: 不同的“const”限定符
 D:\My_Repository\DAILY-CODE\test-24-4-10\test-24-4-10\strstr.c(9,8): warning C4090: “初始化”: 不同的“const”限定符
+  LINK : 没有找到 D:\My_Repository\DAILY-CODE\test-24-4-10\x64\Debug\test-24-4-10.exe 或上一个增量链接没有生成它；正在执行完全链接
   test-24-4-10.vcxproj -> D:\My_Repository\DAILY-CODE\test-24-4-10\x64\Debug\test-24-4-10.exe
