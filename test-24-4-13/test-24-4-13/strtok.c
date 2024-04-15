@@ -29,6 +29,11 @@ char* my_strtok(char* str1, const char* str2)
 	}
 	else
 	{
+		while (*(str0 + 1) == *str2 || *(str0 + 1) == *(str2 + 1))
+		{
+			str0++;
+		}
+
 		const char* ret2 = (str0 + 1);
 		char* str3 = NULL;
 		if (*ret2 == '\0')
@@ -58,8 +63,7 @@ char* my_strtok(char* str1, const char* str2)
 int main()
 {
 	//模拟实现strtok
-	//待解决问题：每一个打印结果会换行。
-	char arr1[] = { "pomdetom@@@gmail..com" };
+	char arr1[] = { "pomdetom@.@.@gmail..com" };
 	char arr2[] = { "@." };
 	char arr0[30] = { 0 };
 	strcpy(arr0, arr1);
