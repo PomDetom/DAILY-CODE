@@ -1,0 +1,3 @@
+﻿  judgechar.c
+D:\My_Repository\DAILY-CODE\test-24-4-19\test-24-4-19\judgechar.c(7,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  test-24-4-19.vcxproj -> D:\My_Repository\DAILY-CODE\test-24-4-19\x64\Debug\test-24-4-19.exe
