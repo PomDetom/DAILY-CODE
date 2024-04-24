@@ -15,32 +15,53 @@ int main()
     char c = 0;
     scanf("%lf%c%lf", &a, &c, &b);
 
-    if (c == '+')
+    //if (c == '+')
+    //{
+    //    printf("%.4f%c%.4f=%.4f", a, c, b, a + b);
+    //}
+    //else if (c == '-')
+    //{
+    //    printf("%.4f%c%.4f=%.4f", a, c, b, a - b);
+    //}
+    //else if (c == '*')
+    //{
+    //    printf("%.4f%c%.4f=%.4f", a, c, b, a * b);
+    //}
+    //else if (c == '/')
+    //{
+    //    if (b == 0)
+    //    {
+    //        printf("Wrong!Division by zero!");
+    //    }
+    //    else
+    //    {
+    //        printf("%.4f%c%.4f=%.4f", a, c, b, a / b);
+    //    }
+    //}
+    //else
+    //{
+    //    printf("Invalid operation!");
+    //}
+    switch (c)
     {
+    case'+':
         printf("%.4f%c%.4f=%.4f", a, c, b, a + b);
-    }
-    else if (c == '-')
-    {
+        break;
+    case'-':
         printf("%.4f%c%.4f=%.4f", a, c, b, a - b);
-    }
-    else if (c == '*')
-    {
+        break;
+    case'*':
         printf("%.4f%c%.4f=%.4f", a, c, b, a * b);
-    }
-    else if (c == '/')
-    {
+        break;
+    case'/':
         if (b == 0)
-        {
             printf("Wrong!Division by zero!");
-        }
         else
-        {
             printf("%.4f%c%.4f=%.4f", a, c, b, a / b);
-        }
-    }
-    else
-    {
+        break;
+    default:
         printf("Invalid operation!");
+        break;
     }
 
     return 0;
