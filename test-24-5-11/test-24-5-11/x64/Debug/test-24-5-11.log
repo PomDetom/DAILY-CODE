@@ -1,0 +1,3 @@
+﻿  offsetof.c
+D:\My_Repository\Contacts\test-24-5-11\test-24-5-11\offsetof.c(18,8): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  test-24-5-11.vcxproj -> D:\My_Repository\Contacts\test-24-5-11\x64\Debug\test-24-5-11.exe
