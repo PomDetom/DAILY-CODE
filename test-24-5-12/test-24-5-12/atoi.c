@@ -6,7 +6,7 @@ int my_atoi(const char* str)
 	int count_num = 0;
 	int count_str = 0;
 
-	if (*str == '+' || *str == '-')
+	while (*(str + count_str) == '+' || *(str + count_str) == '-' || *(str + count_str) == ' ')
 	{
 		count_str++;
 	}
@@ -16,7 +16,7 @@ int my_atoi(const char* str)
 	}
 	if (count_num != 0)
 	{
-		int ret = 0;
+		long ret = 0;
 		int i = 0;
 		int j = 1;
 
@@ -25,7 +25,7 @@ int my_atoi(const char* str)
 			ret += (*(str + count_num + count_str - i - 1) - 48) * j;
 			j *= 10;
 		}
-		if (*str == '-')
+		if (*(str + count_str - 1) == '-')
 		{
 			return ((-1) * ret);
 		}
@@ -41,7 +41,7 @@ int my_atoi(const char* str)
 int main()
 {
 	//模拟实现atoi函数
-	char arr[100] = { "-341234.567" };
+	char arr[100] = { "    -341234.567" };
 
 	long ret = my_atoi(arr);
 
