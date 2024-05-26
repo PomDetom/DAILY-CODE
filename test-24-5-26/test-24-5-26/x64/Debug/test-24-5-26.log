@@ -1,0 +1,8 @@
+﻿  list.c
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(20,9): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(40,9): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(42,14): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(52,14): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+  test.c
+  正在生成代码...
+  test-24-5-26.vcxproj -> D:\My_Repository\DAILY-CODE\test-24-5-26\x64\Debug\test-24-5-26.exe
