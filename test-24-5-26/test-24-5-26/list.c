@@ -53,24 +53,46 @@ void SListPushFront(SLTNode** pphead, SLTDataType x)
 	*pphead = plist;
 }
 
-////链表尾删
-//void SListDelBack(SLTNode** pphead)
-//{
-//
-//}
-//
-////链表首删
-//void SListDelFront(SLTNode** pphead)
-//{
-//
-//}
-//
-////链表查找
-//SLTNode* SListFind(SLTNode* phead)
-//{
-//
-//}
-//
+//链表尾删
+void SListDelBack(SLTNode** pphead)
+{
+	SLTNode* tail = *pphead;
+	SLTNode* cur = tail;
+	assert(tail != NULL);
+
+	if (tail->next == NULL)
+	{
+		free(tail);
+		*pphead = NULL;
+	}
+	else
+	{
+		while (tail->next)
+		{
+			cur = tail;
+			tail = tail->next;
+		}
+		free(tail);
+		cur->next = NULL;
+	}
+}
+
+//链表首删
+void SListDelFront(SLTNode** pphead)
+{
+	assert(*pphead != NULL);
+	SLTNode* cur = *pphead;
+	cur = cur->next;
+	free(*pphead);
+	*pphead = cur;
+}
+
+//链表查找
+SLTNode* SListFind(SLTNode* phead)
+{
+
+}
+
 ////链表插入
 //void SListInsert(SLTNode* phead, SLTNode* pos, SLTDataType x)
 //{

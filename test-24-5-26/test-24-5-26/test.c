@@ -13,9 +13,9 @@ void SListTest1()
 	SListPushBack(&plist, 4);
 	SListPushBack(&plist, 5);
 
-	//SListDelBack(&plist);
-	//SListDelBack(&plist);
-	//SListDelBack(&plist);
+	SListDelBack(&plist);
+	SListDelBack(&plist);
+	SListDelBack(&plist);
 	//SListDelBack(&plist);
 	//SListDelBack(&plist);
 
@@ -33,19 +33,34 @@ void SListTest2()
 	SListPushFront(&plist, 4);
 	SListPushFront(&plist, 5);
 
-	//SListDelFront(&plist);
-	//SListDelFront(&plist);
-	//SListDelFront(&plist);
+	SListDelFront(&plist);
+	SListDelFront(&plist);
+	SListDelFront(&plist);
 	//SListDelFront(&plist);
 	//SListDelFront(&plist);
 
 	SListPrint(plist);
 }
 
+//≤‚ ‘≤È’“
+void SListTest3()
+{
+	SLTNode* plist = NULL;
+
+	SListPushBack(&plist, 2);
+	SListPushBack(&plist, 5);
+	SListPushBack(&plist, 7);
+	SListPushBack(&plist, 8);
+	SListPushBack(&plist, 1);
+	SListPrint(plist);
+
+	SLTNode* retplist = SListFind(plist, )
+}
+
 int main()
 {
 	//SListTest1();
-	SListTest2();
-	
+	//SListTest2();
+	SListTest3();
 	return 0;
 }

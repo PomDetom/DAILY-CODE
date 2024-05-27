@@ -22,14 +22,14 @@ void SListPushBack(SLTNode** pphead, SLTDataType x);
 //链表首插
 void SListPushFront(SLTNode** pphead, SLTDataType x);
 
-////链表尾删
-//void SListDelBack(SLTNode** pphead);
-//
-////链表首删
-//void SListDelFront(SLTNode** pphead);
-//
-////链表查找
-//SLTNode* SListFind(SLTNode* phead);
-//
+//链表尾删
+void SListDelBack(SLTNode** pphead);
+
+//链表首删
+void SListDelFront(SLTNode** pphead);
+
+//链表查找
+SLTNode* SListFind(SLTNode* phead);
+
 ////链表插入
 //void SListInsert(SLTNode* phead, SLTNode* pos, SLTDataType x);
