@@ -1,11 +1,18 @@
 ﻿  list.c
-D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(20,9): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
-D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(40,9): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
-D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(42,14): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
-D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(52,14): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
-D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(73,9): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
-D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(85,6): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
-  test.c
-  正在生成代码...
-D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(94,1): warning C4716: “SListFind”: 必须返回一个值
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(23,9): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(42,9): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(44,14): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(53,14): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(74,9): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(86,6): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(102,9): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(114,15): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(120,20): warning C4133: “!=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(122,8): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(124,13): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(125,15): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(134,11): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(141,20): warning C4133: “!=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(143,8): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
+D:\My_Repository\DAILY-CODE\test-24-5-26\test-24-5-26\list.c(159,11): warning C4133: “=”: 从“SLTNode *”到“SLTNode *”的类型不兼容
   test-24-5-26.vcxproj -> D:\My_Repository\DAILY-CODE\test-24-5-26\x64\Debug\test-24-5-26.exe

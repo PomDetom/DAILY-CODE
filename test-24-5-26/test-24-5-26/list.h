@@ -29,7 +29,16 @@ void SListDelBack(SLTNode** pphead);
 void SListDelFront(SLTNode** pphead);
 
 //链表查找
-SLTNode* SListFind(SLTNode* phead);
+SLTNode* SListFind(SLTNode* phead, SLTDataType x);
 
-////链表插入
-//void SListInsert(SLTNode* phead, SLTNode* pos, SLTDataType x);
+//链表插入
+void SListInsert(SLTNode** pphead, SLTNode* pos, SLTDataType x);
+
+//在某处的后方插入
+//void SListInsertAfter(SLTNode* phead, SLTNode* pos, SLTDataType x);
+
+//链表擦除
+void SListErase(SLTNode** pphead, SLTNode* pos);
+
+//链表销毁
+void SListDestory(SLTNode** pphead);

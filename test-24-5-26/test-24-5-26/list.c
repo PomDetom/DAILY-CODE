@@ -3,12 +3,15 @@
 #include "list.h"
 
 //创建空间
-void SListCreateSpace(SLTNode** plist, SLTDataType x)
+SLTNode* SListCreateSpace(SLTDataType x)
 {
-	*plist = (SLTNode*)malloc(sizeof(SLTNode));
-	assert((*plist) != NULL);
-	(*plist)->date = x;
-	(*plist)->next = NULL;
+	SLTNode* plist = NULL;
+	plist = (SLTNode*)malloc(sizeof(SLTNode));
+	assert(plist != NULL);
+	plist->date = x;
+	plist->next = NULL;
+
+	return plist;
 }
 
 //链表打印
@@ -25,8 +28,7 @@ void SListPrint(SLTNode* phead)
 //链表尾插
 void SListPushBack(SLTNode** pphead, SLTDataType x)
 {
-	SLTNode* plist = NULL;
-	SListCreateSpace(&plist, x);
+	SLTNode* plist = SListCreateSpace(x);
 
 	if (*pphead == NULL)
 	{
@@ -43,11 +45,10 @@ void SListPushBack(SLTNode** pphead, SLTDataType x)
 	}
 }
 
-//链表首插
+//链表首	插
 void SListPushFront(SLTNode** pphead, SLTDataType x)
 {
-	SLTNode* plist = NULL;
-	SListCreateSpace(&plist, x);
+	SLTNode* plist = SListCreateSpace(x);
 
 	plist->next = *pphead;
 	*pphead = plist;
@@ -88,13 +89,74 @@ void SListDelFront(SLTNode** pphead)
 }
 
 //链表查找
-SLTNode* SListFind(SLTNode* phead)
+SLTNode* SListFind(SLTNode* phead, SLTDataType x)
 {
+	assert(phead != NULL);
 
+	while (phead)
+	{
+		if (phead->date == x)
+		{
+			return phead;
+		}
+		phead = phead->next;
+	}
+	return NULL;
 }
 
-////链表插入
-//void SListInsert(SLTNode* phead, SLTNode* pos, SLTDataType x)
-//{
-//
-//}
+//链表插入
+void SListInsert(SLTNode** pphead, SLTNode* pos, SLTDataType x)
+{
+	SLTNode* plist = SListCreateSpace(x);
+
+	if (pos == *pphead)
+	{
+		plist->next = pos;
+		*pphead = plist;
+	}
+	else
+	{
+		SLTNode* cur = *pphead;
+		while (cur->next != pos)
+		{
+			cur = cur->next;
+		}
+		cur->next = plist;
+		plist->next = pos;
+	}
+}
+
+//链表擦除
+void SListErase(SLTNode** pphead, SLTNode* pos)
+{
+	if (*pphead == pos)
+	{
+		*pphead = (*pphead)->next;
+		free(pos);
+	}
+	else
+	{
+		SLTNode* cur = *pphead;
+		
+		while (cur->next != pos)
+		{
+			cur = cur->next;
+		}
+		cur->next = pos->next;
+		free(pos);
+	}
+}
+
+//链表销毁
+void SListDestory(SLTNode** pphead)
+{
+	assert(*pphead != NULL);
+
+	SLTNode* cur = NULL;
+	while (*pphead)
+	{
+		cur = *pphead;
+		*pphead = (*pphead)->next;
+		free(cur);
+	}
+}
