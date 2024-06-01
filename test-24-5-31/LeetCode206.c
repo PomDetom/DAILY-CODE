@@ -1,4 +1,4 @@
-//206. 反转链表
+//LeetCode206. 反转链表
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -8,17 +8,25 @@
  */
 struct ListNode* reverseList(struct ListNode* head) {
 
-    if (head == NULL)
+    //递归
+    if (head == NULL || head->next == NULL)
     {
         return head;
     }
-    //递归
+
+    struct ListNode* cur = reverseList(head->next);
+    head->next->next = head;
+    head->next = NULL;
     
+    return cur;
 
     //迭代
+    // if (head == NULL)
+    // {
+    //     return head;
+    // }
     // struct ListNode* cur = head;
     // struct ListNode* tail = head;
-
     // while (tail->next != NULL)
     // {
     //     tail = tail->next ;
